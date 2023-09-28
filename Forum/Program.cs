@@ -18,6 +18,8 @@ builder.Services.AddScoped<IPostDao, PostFileDao>();
 builder.Services.AddScoped<IUserDao, UserFileDao>();
 builder.Services.AddScoped<IUserLogic, UserLogic>();
 builder.Services.AddScoped<IPostLogic, PostLogic>();
+builder.Services.AddScoped<ICommentLogic, CommentLogic>();
+builder.Services.AddScoped<ICommentDao, CommentFileDao>();
 
 
 var app = builder.Build();

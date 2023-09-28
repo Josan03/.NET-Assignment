@@ -40,7 +40,6 @@ C:\VIA University\Semester 3\.NET\Assignment1_Forum\Assignment1_Forum\Forum\obj\
 C:\VIA University\Semester 3\.NET\Assignment1_Forum\Assignment1_Forum\Forum\bin\Debug\net7.0\data.json
 C:\VIA University\Semester 3\.NET\Assignment_Forum\Assignment_Forum\Forum\bin\Debug\net7.0\appsettings.Development.json
 C:\VIA University\Semester 3\.NET\Assignment_Forum\Assignment_Forum\Forum\bin\Debug\net7.0\appsettings.json
-C:\VIA University\Semester 3\.NET\Assignment_Forum\Assignment_Forum\Forum\bin\Debug\net7.0\data.json
 C:\VIA University\Semester 3\.NET\Assignment_Forum\Assignment_Forum\Forum\bin\Debug\net7.0\Forum.exe
 C:\VIA University\Semester 3\.NET\Assignment_Forum\Assignment_Forum\Forum\bin\Debug\net7.0\Forum.deps.json
 C:\VIA University\Semester 3\.NET\Assignment_Forum\Assignment_Forum\Forum\bin\Debug\net7.0\Forum.runtimeconfig.json
