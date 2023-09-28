@@ -528,11 +528,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\VIA University\\Semester 3\\.NET\\Assignment_Forum\\Assignment_Forum\\Forum\\Forum.csproj",
-      "projectName": "Forum",
-      "projectPath": "C:\\VIA University\\Semester 3\\.NET\\Assignment_Forum\\Assignment_Forum\\Forum\\Forum.csproj",
+      "projectUniqueName": "C:\\VIA University\\Semester 3\\.NET\\Assignment_Forum\\Assignment_Forum\\WebAPI\\WebAPI.csproj",
+      "projectName": "WebAPI",
+      "projectPath": "C:\\VIA University\\Semester 3\\.NET\\Assignment_Forum\\Assignment_Forum\\WebAPI\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
-      "outputPath": "C:\\VIA University\\Semester 3\\.NET\\Assignment_Forum\\Assignment_Forum\\Forum\\obj\\",
+      "outputPath": "C:\\VIA University\\Semester 3\\.NET\\Assignment_Forum\\Assignment_Forum\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
