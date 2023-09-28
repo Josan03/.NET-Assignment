@@ -1,0 +1,53 @@
+{
+  "Users": [
+    {
+      "Id": 1,
+      "Username": "Cristian",
+      "Email": "josan.c2003@gmail.com",
+      "Password": "15438"
+    },
+    {
+      "Id": 2,
+      "Username": "Danielle",
+      "Email": "danielle23@gmail.com",
+      "Password": "danielle123"
+    }
+  ],
+  "Posts": [
+    {
+      "Id": 1,
+      "Owner": {
+        "Id": 1,
+        "Username": "Cristian",
+        "Email": "josan.c2003@gmail.com",
+        "Password": "15438"
+      },
+      "Title": "Learn Angular \u002B TypeScript",
+      "Body": "Should watch module 2 of the course"
+    }
+  ],
+  "Comments": [
+    {
+      "Id": 1,
+      "Content": "Good luck, Cristian!",
+      "Owner": {
+        "Id": 2,
+        "Username": "Danielle",
+        "Email": "danielle23@gmail.com",
+        "Password": "danielle123"
+      },
+      "Post": {
+        "Id": 1,
+        "Owner": {
+          "Id": 1,
+          "Username": "Cristian",
+          "Email": "josan.c2003@gmail.com",
+          "Password": "15438"
+        },
+        "Title": "Learn Angular \u002B TypeScript",
+        "Body": "Should watch module 2 of the course"
+      },
+      "Date": "2023-09-28T14:35:22.3957436+02:00"
+    }
+  ]
+}

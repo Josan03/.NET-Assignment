@@ -34,4 +34,9 @@ public class CommentLogic : ICommentLogic
         Comment created = await commentDao.CreateCommentAsync(toCreate);
         return created;
     }
+
+    public Task<IEnumerable<Comment>> GetAsync(SearchCommentParametersDto dto)
+    {
+        return commentDao.GetAsync(dto);
+    }
 }
