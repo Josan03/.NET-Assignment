@@ -1,4 +1,4 @@
 # .NET-Assignment
 
 ##### Class Diagram:
-![Class Diagram](This PC/C/VIA University/Semester 3/.NET/Assignment_Forum/Assignment_Forum/Class Diagram0.svg)  
+![Class Diagram](file:///C:/VIA%20University/Semester%203/.NET/Assignment_Forum/Assignment_Forum/Class%20Diagram0.svg)
