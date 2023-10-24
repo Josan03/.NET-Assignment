@@ -1,6 +1,6 @@
 ﻿using Application.LogicInterfaces;
-using Domain.DTOs;
-using Domain.Models;
+using Shared.DTOs;
+using Shared.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Forum.Controllers;

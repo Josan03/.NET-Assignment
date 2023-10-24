@@ -4,13 +4,29 @@
       "Id": 1,
       "Username": "Cristian",
       "Email": "josan.c2003@gmail.com",
-      "Password": "15438"
+      "Password": "15438",
+      "Role": null
     },
     {
       "Id": 2,
       "Username": "Danielle",
       "Email": "danielle23@gmail.com",
-      "Password": "danielle123"
+      "Password": "danielle123",
+      "Role": null
+    },
+    {
+      "Id": 3,
+      "Username": "Johnny",
+      "Email": "johnny@gmail.com",
+      "Password": "johnny123",
+      "Role": "Administrator"
+    },
+    {
+      "Id": 4,
+      "Username": "abecedar",
+      "Email": "abecedar@gmail.com",
+      "Password": "abecedar",
+      "Role": "User"
     }
   ],
   "Posts": [
@@ -20,7 +36,8 @@
         "Id": 1,
         "Username": "Cristian",
         "Email": "josan.c2003@gmail.com",
-        "Password": "15438"
+        "Password": "15438",
+        "Role": null
       },
       "Title": "Learn Angular \u002B TypeScript",
       "Body": "Should watch module 2 of the course"
@@ -34,7 +51,8 @@
         "Id": 2,
         "Username": "Danielle",
         "Email": "danielle23@gmail.com",
-        "Password": "danielle123"
+        "Password": "danielle123",
+        "Role": null
       },
       "Post": {
         "Id": 1,
@@ -42,7 +60,8 @@
           "Id": 1,
           "Username": "Cristian",
           "Email": "josan.c2003@gmail.com",
-          "Password": "15438"
+          "Password": "15438",
+          "Role": null
         },
         "Title": "Learn Angular \u002B TypeScript",
         "Body": "Should watch module 2 of the course"

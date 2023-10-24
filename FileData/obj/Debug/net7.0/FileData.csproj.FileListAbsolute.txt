@@ -19,9 +19,7 @@ C:\VIA University\Semester 3\.NET\Assignment_Forum\Assignment_Forum\FileData\bin
 C:\VIA University\Semester 3\.NET\Assignment_Forum\Assignment_Forum\FileData\bin\Debug\net7.0\FileData.dll
 C:\VIA University\Semester 3\.NET\Assignment_Forum\Assignment_Forum\FileData\bin\Debug\net7.0\FileData.pdb
 C:\VIA University\Semester 3\.NET\Assignment_Forum\Assignment_Forum\FileData\bin\Debug\net7.0\Application.dll
-C:\VIA University\Semester 3\.NET\Assignment_Forum\Assignment_Forum\FileData\bin\Debug\net7.0\Domain.dll
 C:\VIA University\Semester 3\.NET\Assignment_Forum\Assignment_Forum\FileData\bin\Debug\net7.0\Application.pdb
-C:\VIA University\Semester 3\.NET\Assignment_Forum\Assignment_Forum\FileData\bin\Debug\net7.0\Domain.pdb
 C:\VIA University\Semester 3\.NET\Assignment_Forum\Assignment_Forum\FileData\obj\Debug\net7.0\FileData.csproj.AssemblyReference.cache
 C:\VIA University\Semester 3\.NET\Assignment_Forum\Assignment_Forum\FileData\obj\Debug\net7.0\FileData.GeneratedMSBuildEditorConfig.editorconfig
 C:\VIA University\Semester 3\.NET\Assignment_Forum\Assignment_Forum\FileData\obj\Debug\net7.0\FileData.AssemblyInfoInputs.cache
@@ -32,3 +30,5 @@ C:\VIA University\Semester 3\.NET\Assignment_Forum\Assignment_Forum\FileData\obj
 C:\VIA University\Semester 3\.NET\Assignment_Forum\Assignment_Forum\FileData\obj\Debug\net7.0\refint\FileData.dll
 C:\VIA University\Semester 3\.NET\Assignment_Forum\Assignment_Forum\FileData\obj\Debug\net7.0\FileData.pdb
 C:\VIA University\Semester 3\.NET\Assignment_Forum\Assignment_Forum\FileData\obj\Debug\net7.0\ref\FileData.dll
+C:\VIA University\Semester 3\.NET\Assignment_Forum\Assignment_Forum\FileData\bin\Debug\net7.0\Shared.dll
+C:\VIA University\Semester 3\.NET\Assignment_Forum\Assignment_Forum\FileData\bin\Debug\net7.0\Shared.pdb

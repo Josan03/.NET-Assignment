@@ -1,6 +1,6 @@
 using Application.LogicInterfaces;
-using Domain.DTOs;
-using Domain.Models;
+using Shared.DTOs;
+using Shared.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Forum.Controllers;
@@ -22,7 +22,7 @@ public class UserController : ControllerBase
         try
         {
             User user = await userLogic.RegisterAsync(dto);
-            return Created($"/users/{user.Id}", user);
+            return Created($"/users/{user.Username}", user);
         }
         catch (Exception e)
         {
