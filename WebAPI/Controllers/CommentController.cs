@@ -1,4 +1,5 @@
 ﻿using Application.LogicInterfaces;
+using Microsoft.AspNetCore.Components;
 using Shared.DTOs;
 using Shared.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -6,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Forum.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Microsoft.AspNetCore.Mvc.Route("[controller]")]
 public class CommentController : ControllerBase
 {
     private readonly ICommentLogic commentLogic;
@@ -32,8 +33,8 @@ public class CommentController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Comment>>> GetAsync(int? userId, string? username, int? postId,
-        DateTime? date)
+    public async Task<ActionResult<IEnumerable<Comment>>> GetAsync([FromQuery]int? userId, [FromQuery]string? username, [FromQuery]int? postId,
+        [FromQuery]DateTime? date)
     {
         try
         {

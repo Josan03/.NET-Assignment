@@ -1,4 +1,4 @@
-﻿@page "/posts/{PostId}"
+﻿@page "/Post/{PostId}"
 @using HttpClients.ClientInterfaces
 @using System.Security.Claims
 @using global::Shared.DTOs
@@ -21,10 +21,7 @@
 else
 {
     <div class="post-card">
-        <label class="post-card-title">@post.Title</label>
-        <NavLink class="nav-link" href="@($"user/{post.Owner.Username}")" Match="NavLinkMatch.All">
-            <label class="post-card-author">by @post.Owner.Username</label>
-        </NavLink>
+        <label class="post-card-title">@post.Title by @post.OwnerUsername</label>
         <label class="post-card-context">@post.Body</label>
     </div>
 
@@ -45,9 +42,7 @@ else
             @foreach (Comment comment in comments)
             {
                 <div class="comment-card">
-                    <NavLink class="nav-link" href="@($"users/{comment.Owner.Username}")" Match="NavLinkMatch.All">
-                        <label class="comment-card-author">@comment.Owner.Username</label>
-                    </NavLink>
+                    <label class="comment-card-author">@comment.Owner.Username</label>
                     <label class="comment-card-context">@comment.Content</label>
                 </div>
             }
@@ -66,7 +61,7 @@ else
     [Parameter]
     public string? PostId { get; set; }
 
-    private Post? post;
+    private PostBasicDto? post;
     private IEnumerable<Comment>? comments;
     private string msg = "";
 
@@ -87,7 +82,8 @@ else
             Comment comment = await commentService.CreateCommentAsync(new CommentCreationDto(body, name, Int32.Parse(PostId)));
             if (comment.Id != -1)
             {
-                navMgr.NavigateTo($"posts/{PostId}", forceLoad: true);
+                navMgr.NavigateTo($"/post/");
+                navMgr.NavigateTo($"/post/{PostId}");
             }
         }
         catch (Exception e)
@@ -102,7 +98,7 @@ else
         msg = "";
         try
         {
-            post = await postService.GetByIdAsync(PostId!);
+            post = await postService.GetByIdAsync(PostId);
             comments = await commentService.GetAsync(new SearchCommentParametersDto(post.Id));
         }
         catch (Exception e)

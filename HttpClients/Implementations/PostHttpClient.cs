@@ -15,12 +15,12 @@ public class PostHttpClient : IPostService
         this.client = client;
     }
     
-    public async Task<Post> GetByIdAsync(string id)
+    public async Task<PostBasicDto> GetByIdAsync(string id)
     {
-        string uri = "/Posts";
+        string uri = "/Post/";
         if (!string.IsNullOrEmpty(id))
         {
-            uri += $"?postId={id}";
+            uri += $"{id}";
         }
 
         HttpResponseMessage response = await client.GetAsync(uri);
@@ -30,7 +30,7 @@ public class PostHttpClient : IPostService
             throw new Exception(result);
         }
 
-        Post post = JsonSerializer.Deserialize<Post>(result, new JsonSerializerOptions
+        PostBasicDto post = JsonSerializer.Deserialize<PostBasicDto>(result, new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true
         })!;
@@ -39,7 +39,7 @@ public class PostHttpClient : IPostService
 
     public async Task<IEnumerable<Post>> GetAsync(SearchPostParametersDto dto)
     {
-        string uri = "/Posts";
+        string uri = "/Post";
         if (dto.Username != null)
             uri += $"?userName={dto.Username}";
 

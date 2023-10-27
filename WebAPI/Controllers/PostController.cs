@@ -53,8 +53,8 @@ public class PostController : ControllerBase
     {
         try
         {
-            var result = await postLogic.GetByIdAsync(id);
-            return Ok(result);
+            PostBasicDto post = await postLogic.GetByIdAsync(id);
+            return Ok(post);
         }
         catch (Exception e)
         {

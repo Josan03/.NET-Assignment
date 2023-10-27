@@ -18,7 +18,6 @@ else
         <tr>
             <th>Id</th>
             <th>Username</th>
-            <th>Password</th>
             <th>Role</th>
             <th>Email</th>
         </tr>
@@ -29,7 +28,6 @@ else
             <tr>
                 <td>@user.Id</td>
                 <td>@user.Username</td>
-                <td>@user.Password</td>
                 <td>@user.Role</td>
                 <td>@user.Email</td>
             </tr>
@@ -40,10 +38,19 @@ else
 
 @code {
     private Users[]? users;
+    private string msg = "";
     
     protected override async Task OnInitializedAsync()
     {
-        users = await Http.GetFromJsonAsync<Users[]>("/User");
+        msg = "";
+        try
+        {
+            users = await Http.GetFromJsonAsync<Users[]>("/User");
+        } catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
     }
 
     public class Users
@@ -51,7 +58,6 @@ else
         public int? Id { get; set; }
         public string? Username { get; set; }
         public string? Email { get; set; }
-        public string? Password { get; set; }
         public string? Role { get; set; }
     }
 

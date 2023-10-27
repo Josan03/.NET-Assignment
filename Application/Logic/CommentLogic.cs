@@ -20,9 +20,9 @@ public class CommentLogic : ICommentLogic
     
     public async Task<Comment> CreateCommentAsync(CommentCreationDto dto)
     {
-        User? user = await userDao.GetByIdAsync(dto.OwnerId);
+        User? user = await userDao.GetByUsernameAsync(dto.OwnerUsername);
         if (user == null)
-            throw new Exception($"User with id {dto.OwnerId} was not found.");
+            throw new Exception($"User with username {dto.OwnerUsername} was not found.");
         
         Post? post = await postDao.GetByIdAsync(dto.PostId);
         if (post == null)

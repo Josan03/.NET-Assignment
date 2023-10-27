@@ -1,7 +1,6 @@
-﻿@page "/Post"
+﻿@page "/CreatePost"
 @using System.Security.Claims
 @using global::Shared.DTOs
-@using global::Shared.Models
 @using HttpClients.ClientInterfaces
 @inject NavigationManager navMgr
 @inject IPostService postService;
@@ -22,7 +21,7 @@
         }
     </Authorized>
     <NotAuthorized>
-        <p>You need to log in in order to create a post</p>
+        <h3>You need to log in in order to create a post</h3>
     </NotAuthorized>
 </AuthorizeView>
 
@@ -54,8 +53,8 @@
 
         try
         {
-            Post post = await postService.CreateAsync(new PostCreationDto(name!, title, context));
-            navMgr.NavigateTo($"/post/{post.Id}");
+            global::Shared.Models.Post post = await postService.CreateAsync(new PostCreationDto(name, title, context));
+            navMgr.NavigateTo($"/post");
         }
         catch (Exception e)
         {
