@@ -27,19 +27,6 @@ public class UserLogic : IUserLogic
         return created;
     }
 
-    public async Task<User> Login(UserLoginDto dto)
-    {
-        User? user = await userDao.GetByUsernameAsync(dto.Username);
-       
-        if (user == null)
-            throw new Exception("User not found!");
-        
-        if (!user.Password.Equals(dto.Password))
-            throw new Exception("Incorrect password!");
-
-        return user;
-    }
-
     public Task<IEnumerable<User>> GetAsync(SearchUserParametersDto searchParameters)
     {
         return userDao.GetAsync(searchParameters);
