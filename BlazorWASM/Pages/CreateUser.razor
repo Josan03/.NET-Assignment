@@ -39,7 +39,7 @@
 
         try
         {
-            await authService.RegisterAsync(new global::Shared.Models.User(username, email, password, role: "User"));
+            await authService.RegisterAsync(new global::Shared.Models.User(username, password, email, role: "User"));
             username = "";
             email = "";
             password = "";

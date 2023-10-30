@@ -80,7 +80,7 @@ public class AuthController : ControllerBase
     {
         try
         {
-            await authService.RegisterUser(new User(userRegistrationDto.Username, userRegistrationDto.Email, userRegistrationDto.Password, role: "User"));
+            await authService.RegisterUser(new User(userRegistrationDto.Username, userRegistrationDto.Password, userRegistrationDto.Email, role: "User"));
             return Ok();
         }
         catch (Exception e)
