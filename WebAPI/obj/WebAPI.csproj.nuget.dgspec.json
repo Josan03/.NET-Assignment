@@ -68,14 +68,14 @@
         }
       }
     },
-    "C:\\VIA University\\Semester 3\\.NET\\Assignment_Forum\\Assignment_Forum\\FileData\\FileData.csproj": {
+    "C:\\VIA University\\Semester 3\\.NET\\Assignment_Forum\\Assignment_Forum\\EfcDataAccess\\EfcDataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\VIA University\\Semester 3\\.NET\\Assignment_Forum\\Assignment_Forum\\FileData\\FileData.csproj",
-        "projectName": "FileData",
-        "projectPath": "C:\\VIA University\\Semester 3\\.NET\\Assignment_Forum\\Assignment_Forum\\FileData\\FileData.csproj",
+        "projectUniqueName": "C:\\VIA University\\Semester 3\\.NET\\Assignment_Forum\\Assignment_Forum\\EfcDataAccess\\EfcDataAccess.csproj",
+        "projectName": "EfcDataAccess",
+        "projectPath": "C:\\VIA University\\Semester 3\\.NET\\Assignment_Forum\\Assignment_Forum\\EfcDataAccess\\EfcDataAccess.csproj",
         "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
-        "outputPath": "C:\\VIA University\\Semester 3\\.NET\\Assignment_Forum\\Assignment_Forum\\FileData\\obj\\",
+        "outputPath": "C:\\VIA University\\Semester 3\\.NET\\Assignment_Forum\\Assignment_Forum\\EfcDataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -112,6 +112,22 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -230,8 +246,8 @@
               "C:\\VIA University\\Semester 3\\.NET\\Assignment_Forum\\Assignment_Forum\\Application\\Application.csproj": {
                 "projectPath": "C:\\VIA University\\Semester 3\\.NET\\Assignment_Forum\\Assignment_Forum\\Application\\Application.csproj"
               },
-              "C:\\VIA University\\Semester 3\\.NET\\Assignment_Forum\\Assignment_Forum\\FileData\\FileData.csproj": {
-                "projectPath": "C:\\VIA University\\Semester 3\\.NET\\Assignment_Forum\\Assignment_Forum\\FileData\\FileData.csproj"
+              "C:\\VIA University\\Semester 3\\.NET\\Assignment_Forum\\Assignment_Forum\\EfcDataAccess\\EfcDataAccess.csproj": {
+                "projectPath": "C:\\VIA University\\Semester 3\\.NET\\Assignment_Forum\\Assignment_Forum\\EfcDataAccess\\EfcDataAccess.csproj"
               }
             }
           }

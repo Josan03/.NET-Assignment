@@ -1,8 +1,130 @@
 {
   "Users": [
+    {
+      "Id": 1,
+      "Username": "Cristian",
+      "Email": "josan.c2003@gmail.com",
+      "Password": "12345",
+      "Role": "User"
+    },
+    {
+      "Id": 2,
+      "Username": "test",
+      "Email": "test@gmail.com",
+      "Password": "12345",
+      "Role": "User"
+    }
   ],
   "Posts": [
+    {
+      "Id": 1,
+      "Owner": {
+        "Id": 1,
+        "Username": "Cristian",
+        "Email": "josan.c2003@gmail.com",
+        "Password": "12345",
+        "Role": "User"
+      },
+      "Title": "Finished 1st \u0026 2nd Part of Assignment .NET",
+      "Body": "Feeling happy to finish the part 1 \u0026 2 of the Assignement"
+    },
+    {
+      "Id": 2,
+      "Owner": {
+        "Id": 1,
+        "Username": "Cristian",
+        "Email": "josan.c2003@gmail.com",
+        "Password": "12345",
+        "Role": "User"
+      },
+      "Title": "Another Post",
+      "Body": "Some description"
+    },
+    {
+      "Id": 3,
+      "Owner": {
+        "Id": 2,
+        "Username": "test",
+        "Email": "test@gmail.com",
+        "Password": "12345",
+        "Role": "User"
+      },
+      "Title": "Another Post",
+      "Body": "Another descripiton"
+    }
   ],
   "Comments": [
+    {
+      "Id": 1,
+      "Content": "Hurray!!! Congrats!",
+      "Owner": {
+        "Id": 2,
+        "Username": "test",
+        "Email": "test@gmail.com",
+        "Password": "12345",
+        "Role": "User"
+      },
+      "Post": {
+        "Id": 1,
+        "Owner": {
+          "Id": 1,
+          "Username": "Cristian",
+          "Email": "josan.c2003@gmail.com",
+          "Password": "12345",
+          "Role": "User"
+        },
+        "Title": "Finished 1st \u0026 2nd Part of Assignment .NET",
+        "Body": "Feeling happy to finish the part 1 \u0026 2 of the Assignement"
+      },
+      "Date": "2023-10-30T18:28:51.041978+01:00"
+    },
+    {
+      "Id": 2,
+      "Content": "Feel good for you, man!",
+      "Owner": {
+        "Id": 2,
+        "Username": "test",
+        "Email": "test@gmail.com",
+        "Password": "12345",
+        "Role": "User"
+      },
+      "Post": {
+        "Id": 1,
+        "Owner": {
+          "Id": 1,
+          "Username": "Cristian",
+          "Email": "josan.c2003@gmail.com",
+          "Password": "12345",
+          "Role": "User"
+        },
+        "Title": "Finished 1st \u0026 2nd Part of Assignment .NET",
+        "Body": "Feeling happy to finish the part 1 \u0026 2 of the Assignement"
+      },
+      "Date": "2023-10-30T18:28:58.1480396+01:00"
+    },
+    {
+      "Id": 3,
+      "Content": "Writing myself a comment :(",
+      "Owner": {
+        "Id": 2,
+        "Username": "test",
+        "Email": "test@gmail.com",
+        "Password": "12345",
+        "Role": "User"
+      },
+      "Post": {
+        "Id": 3,
+        "Owner": {
+          "Id": 2,
+          "Username": "test",
+          "Email": "test@gmail.com",
+          "Password": "12345",
+          "Role": "User"
+        },
+        "Title": "Another Post",
+        "Body": "Another descripiton"
+      },
+      "Date": "2023-10-30T18:29:21.3672844+01:00"
+    }
   ]
 }
